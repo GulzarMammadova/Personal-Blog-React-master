@@ -1,64 +1,6 @@
 import '../App.css';
-import { News } from './timeline/TimeLinePost';
-import { useState } from 'react';
-
+import {NewsList} from './timeline/TimeLineList'
 export function Journey() {
-  const newsPosts = [
-    {
-      date: "02 January 2021",
-      title: "The resolution, What am i gonna do?",
-      text: "It’s all about the new year and works i have to do",
-    },
-    {
-      date: "29 January 2021",
-      title: "Gow - command line tool to manage works",
-      text: "Gow is cli tool written in golang using cobra",
-    },
-    {
-      date: "02 February 2021",
-      title: "The resolution, What am i gonna do?",
-      text: "It’s all about the new year and works i have to do",
-    },
-    {
-      date: "01 March 2021",
-      title: "Started designing what you are seeing right now!",
-      text: "Gow is cli tool written in golang using cobra",
-    },
-    {
-      date: "14 January 2022",
-      title: "The resolution, What am i gonna do?",
-      text: "It’s all about the new year and works i have to do",
-    },
-    {
-      date: "25 February 2022",
-      title: "Gow - command line tool to manage works",
-      text: "Gow is cli tool written in golang using cobra",
-    },
-    {
-      date: "13 April 2022",
-      title: "The resolution, What am i gonna do?",
-      text: "It’s all about the new year and works i have to do",
-    },
-    {
-      date: "16 May 2022",
-      title: "Started designing what you are seeing right now!",
-      text: "Gow is cli tool written in golang using cobra",
-    },
-    {
-      date: "27 January 2023",
-      title: "The resolution, What am i gonna do?",
-      text: "It’s all about the new year and works i have to do",
-    },
-    {
-      date: "02 February 2023",
-      title: "Started designing what you are seeing right now!",
-      text: "Gow is cli tool written in golang using cobra",
-    },
-
-  ]
-
-  const [filterValue, setFilterValue] = useState('date');
-
 
   return (
     <div className="journey">
@@ -83,18 +25,8 @@ export function Journey() {
       </div>
       <div className="right-cont">
         <div><h3>Time line</h3></div>
-        <div>
-          <select className="selected-year" value={filterValue} onChange={(e) => setFilterValue(e.target.value)}>
-            <option className="option" value="year">2021</option>
-            <option className="option" value="year">2022</option>
-            <option className="option" value="year">2023</option>
-          </select>
-        </div>
-        <div className="newsList-container">
-          {newsPosts.map((post, index) => (
-            <News key={index} index={index} post={post} />
-          ))}
-        </div>
+
+        <NewsList/>
       </div>
     </div>
   );

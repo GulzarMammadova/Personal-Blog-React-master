@@ -349,26 +349,9 @@ body {
   font-size: 25px;
   line-height: 30px;
 }
-.journey .right-cont .selected-year {
-  display: flex;
-  width: 191px;
-  height: 42px;
-  border: 0.3px solid #fff;
-  background: none;
-  color: #fff;
-  padding-left: 16px;
-  border-radius: 8px;
-}
-.journey .right-cont .selected-year .option {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
-  background-color: #000;
-}
 .journey .right-cont .newsList-container {
-  overflow: hidden;
+  overflow: auto;
   height: 73%;
-  scroll-behavior: smooth;
 }
 .journey .right-cont .newsList-container .news-container {
   display: flex;
@@ -410,6 +393,23 @@ body {
   line-height: 13px;
   color: rgba(255, 255, 255, 0.5607843137);
   margin: 0;
+}
+
+.timeFilter .selected-year {
+  display: flex;
+  width: 191px;
+  height: 42px;
+  border: 0.3px solid #fff;
+  background: none;
+  color: #fff;
+  padding-left: 16px;
+  border-radius: 8px;
+}
+.timeFilter .selected-year .option {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  background-color: #000;
 }
 
 .main-container {

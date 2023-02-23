@@ -9,6 +9,7 @@ body {
 
 }
 
+
 .header {
     background-color: #000;
 
@@ -389,32 +390,11 @@ a{
             font-size: 25px;
             line-height: 30px;
         }
-        .selected-year {
-            display: flex;
-            width: 191px;
-            height: 42px;
-            border: 0.3px solid #fff;
-            background: none;
-            color: #fff;
-            padding-left: 16px;
-            border-radius: 8px;
-
-
-            .option {
-                font-weight: 600;
-                font-size: 14px;
-                line-height: 17px;
-                background-color: #000;
-            }
-
-        }
 
         //timeline
         .newsList-container{
-            overflow: hidden;
+            overflow: auto;
             height: 73%;
-            scroll-behavior: smooth;
-
 
             .news-container {
                 display: flex;
@@ -463,7 +443,24 @@ a{
         }
     }
 }
-
+.timeFilter{
+    .selected-year {
+        display: flex;
+        width: 191px;
+        height: 42px;
+        border: 0.3px solid #fff;
+        background: none;
+        color: #fff;
+        padding-left: 16px;
+        border-radius: 8px;
+        .option {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+            background-color: #000;
+        }
+    }
+}
 //BLOG
 .main-container {
     display: flex;
